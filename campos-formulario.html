@@ -1,0 +1,42 @@
+<label for="titulo">Título do evendo</label>
+<!-- 👆🏻
+  - Geralmente todo input vem acompanhado de uma label
+  - 1º Tem como função fazer a identificação do campo input
+  - 2º `for="titulo"` essa funcionalidade é para acessibilidade
+    - `for=""` tem que ser o mesmo nome do `id=""` do input
+    - porque fica facíl para o leitor de tela saber que esse label está referenciando a um input x
+ -->
+
+<input type="text" name="titulo" id="titulo" />
+<!-- 👆🏻
+  - type="text" esse é o mais importante porque diz qual é o tipo do meu input (tipo da entrada de dados)
+  - name="titulo" esse é importantisimo para quando eu enviar essa dado par o servidor, usar essa dado lá no banco de dados, em fim, guarda esse dado. O `name` também difini qual valor eu terei nesse campo.
+  - id="titulo" esse é o identificador único dessa tag
+ -->
+
+<input type="password" name="" id="" />
+<input type="number" name="" id="" />
+<input type="checkbox" name="" id="" />
+
+<label for="category">Categoria</label>
+<select name="category" id="category">
+  <option value="music">Música</option>
+  <option value="movie">Filme</option>
+</select>
+<!-- 👆🏻
+  - `select` é um campo de seleção
+  - dentro das seleções que são os option eu tenho os valores `valeu=""`
+  - Os elementos <option> definem uma opção que pode ser selecionada
+  - `valeu=""` Esse é um atributo muito importante, e todos, todos os inputs tem esse valor, porém eu não preciso passar, porque por padrão ele já vem habilitado. Esse value é o que o usuário passou dentro do input, que também é o mesmo que o meu servidor irá receber.
+  - No `option` eu preciso passar o `value=""` e dizer qual é o valor
+ -->
+
+<label for="opinion"></label>
+<textarea name="opinion" id="opinion" cols="30" rows="10"></textarea>
+<!-- 👆🏻
+  - Esse campo é um campo de conteúdo
+  - `cols="30" rows="10"` normalmente são passado no css
+  - no `textarea` também tenho que informar o `label`
+-->
+
+<!-- é importânte que todos os campos sejam seguido por um `label` -->
