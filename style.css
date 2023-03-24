@@ -49,8 +49,27 @@ header p {
 
 form {
   margin-top: 42px;
+  padding: 64px;
   min-height: 500px;
 
   background: #fafafc;
   border-radius: 8px 8px 0px 0px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #32264d;
+
+  width: 100%;
+
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6f0;
 }
