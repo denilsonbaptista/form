@@ -1,0 +1,56 @@
+body {
+  font-family: "Poppins", sans-serif;
+
+  background: #d9d9d9;
+}
+
+/* 👇🏻 Utilizando o Pseudo-elementos ::before para adicionar elementos antes do body */
+body::before {
+  content: "";
+  width: 100%;
+  height: 368px;
+
+  /* 👇🏻 Propriedade que são destravadas pelo `position` */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* 👇🏻 z-index propriedade que determina a ordem de empilhamento dos elementos em uma página da web */
+  z-index: -1;
+
+  background: #121214;
+}
+
+.page {
+  width: 736px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 80px;
+  width: 319px;
+}
+
+header h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #42d3ff;
+}
+
+form {
+  margin-top: 42px;
+  min-height: 500px;
+
+  background: #fafafc;
+  border-radius: 8px 8px 0px 0px;
+}
