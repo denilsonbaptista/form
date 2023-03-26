@@ -1,9 +1,14 @@
+/* 👇🏻 Reset */
 * {
+  /* 👇🏻 Removendo `margin` `padding` que são definidos por padrão pelo o browser */
   margin: 0;
   padding: 0;
+
+  /* 👇🏻 As propriedades de largura e altura (e propriedades min/max) incluem conteúdo, preenchimento e borda */
   box-sizing: border-box;
 }
 
+/* 👇🏻 body, input, button, select, textarea: para eu garantir que as fontes sejam aplicadas nesses locais eu precisso apilicar diretamento neles. */
 body,
 input,
 button,
@@ -84,7 +89,6 @@ fieldset legend {
 
   width: 100%;
 
-  margin-bottom: 24px;
   padding-bottom: 16px;
   border-bottom: 1px solid #e6e6f0;
 }
