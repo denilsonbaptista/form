@@ -30,17 +30,38 @@
           - O elemento `<legend>` deve ser o primeiro filho do `<fieldset>`
          -->
         <fieldset>
-          <legend>Informações do Evento</legend>
+          <div class="fieldset-wrapper">
+            <legend>Informações do Evento</legend>
 
-          <!-- 👇🏻 
+            <!-- 👇🏻 
             - Agrupando os elementos
             - Agrupando os elementos com `div`, `p` da forma que deseja tem n benefícios
            -->
-          <div class="input-wrapper">
-            <label for="event-title"
-              >Título do evento <span>(mínimo 8 caracteres)</span></label
-            >
-            <input type="text" id="event-title" />
+            <div class="input-wrapper">
+              <label for="event-title"
+                >Título do evento <span>(mínimo 8 caracteres)</span></label
+              >
+              <input type="text" id="event-title" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-url"
+                >Link do evento <span>(comece com https://)</span></label
+              >
+              <input type="url" id="event-url" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-whatsapp"
+                >Whatsapp para contato <span>(somente números)</span></label
+              >
+              <input type="number" id="event-whatsapp" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-info">Informações extras</label>
+              <textarea id="event-info"></textarea>
+            </div>
           </div>
         </fieldset>
       </form>
