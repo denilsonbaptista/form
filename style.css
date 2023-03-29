@@ -11,7 +11,6 @@
 /* 👇🏻 body, input, button, select, textarea: para eu garantir que as fontes sejam aplicadas nesses locais eu precisso apilicar diretamento neles. */
 body,
 input,
-button,
 select,
 textarea {
   font-family: "Poppins", sans-serif;
@@ -206,7 +205,6 @@ fieldset legend {
   opacity: 0;
 }
 
-
 /* 👇🏻 
 A 1° coisa a se fazer quando for estilizar o checkbox é desaparecer com ele
 quando eu colo `display:none` eu tiro ele da tela, e isso é horrivel para acessibilidade
@@ -239,4 +237,42 @@ quando eu colo `display:none` eu tiro ele da tela, e isso é horrivel para acess
 /* 👇🏻 Para acessebilidade se colocar um outline no label */
 .checkbox-wrapper input:focus + label::before {
   outline: 2px solid black;
+}
+
+/* 👇🏻 estilizando fundo do button com o footer */
+footer {
+  background: #f0f0f4;
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 8px 8px;
+
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+}
+
+/* 👇🏻 estilizando button */
+footer .button {
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #ffffff;
+
+  height: 56px;
+
+  background: #04d361;
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+}
+
+footer .button:hover {
+  background: #08a04c;
 }
