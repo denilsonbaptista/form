@@ -24,7 +24,7 @@
       </header>
 
       <!-- 👇🏻 Formulário -->
-      <form action="" method="">
+      <form id="my-form" action="" method="">
         <!-- 👇🏻 
           -`fieldset` é usado para agrupar elementos de formulário
           - O elemento `<legend>` deve ser o primeiro filho do `<fieldset>`
@@ -41,7 +41,7 @@
               <label for="event-title"
                 >Título do evento <span>(mínimo 8 caracteres)</span></label
               >
-              <input type="text" id="event-title" />
+              <input type="text" id="event-title" required minlength="8" />
             </div>
 
             <div class="input-wrapper">
@@ -95,7 +95,7 @@
                 >Senha de acesso para os participantes
                 <span>(mínimo 8 caracteres)</span></label
               >
-              <input type="password" id="event-password" />
+              <input type="password" id="event-password" required minlength="8"/>
             </div>
 
             <!-- 👇🏻 Criando e customizando checkbox -->
@@ -129,11 +129,19 @@
             </div>
           </div>
         </fieldset>
+
+        <button type="button"></button>
+        <input type="button" value="">
       </form>
 
       <!-- 👇🏻 Button salvar -->
       <footer>
-        <input class="button" type="submit" value="Salvar evento">
+        <input
+          class="button"
+          type="submit"
+          form="my-form"
+          value="Salvar evento"
+        />
       </footer>
     </div>
   </body>
