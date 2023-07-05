@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-body-color: #d9d9d9;
+  --bg-header: #121214;
+  --bg-form: #fafafc;
+
+  --fc-heading: #fff;
+  --fc-texting: #42d3ff;
+  --fc-legend: #32264d;
+  --fc-label: #4e4958;
+  --fc-label-span: #c1bccc;
+
+  --color-line: #e6e6f0;
+  --color-border-input: #e6e6f0;
+
+  --ff-heading: "Archivo", sans-serif;
+  --ff-texting-button: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--bg-body-color);
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 36.8rem;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+
+  background: var(--bg-header);
+}
+
+.page {
+  max-width: 73.6rem;
+
+  margin: 0 auto;
+}
+
+p,
+label,
+input,
+textarea,
+select,
+button {
+  font-family: var(--ff-texting-button);
+}
+
+h1,
+legend {
+  font-family: var(--ff-heading);
+}
+
+header {
+  max-width: 31.9rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.2rem;
+
+  color: var(--fc-heading);
+
+  margin-top: 8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 2.6rem;
+
+  color: var(--fc-texting);
+
+  margin-top: 2.4rem;
+}
+
+form {
+  background-color: var(--bg-form);
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+
+  margin-top: 4.2rem;
+  padding: 6.4rem;
+}
+
+fieldset {
+  border: 0;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+legend {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.4rem;
+
+  width: 100%;
+  padding-bottom: 1.6rem;
+
+  color: var(--fc-legend);
+  border-bottom: solid 0.1rem var(--color-line);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 2.4rem;
+
+  color: var(--fc-label);
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+label span {
+  color: var(--fc-label-span);
+
+  font-size: 1.2rem;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+input,
+textarea,
+select {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 2.6rem;
+
+  border: 1px solid var(--color-border-input);
+  border-radius: 0.8rem;
+
+  padding: 1.5rem 2.4rem;
+}
+
+textarea {
+  max-width: 60.8rem;
+  height: 16.8rem;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem top 50%;
+}
